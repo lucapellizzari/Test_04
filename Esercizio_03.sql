@@ -13,4 +13,3 @@ select Projects.Id as ProjectID, Departments.Name as Department, Projects.Name a
 from Projects
 left join Employees on Projects.ManagerId = Employees.id
 left join Departments on Employees.DepartmentId = Departments.id
-where Projects.EndDate is null
